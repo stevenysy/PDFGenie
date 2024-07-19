@@ -27,7 +27,7 @@ const chat = async (filePath = "./uploads/kessoku-band.pdf", query) => {
     embeddings,
   );
 
-  // 5. QA with customizing the prompt
+  // 4. QA with customizing the prompt
   const model = new ChatOpenAI({
     modelName: "gpt-3.5-turbo",
     openAIApiKey: process.env.REACT_APP_OPEN_AI_API_KEY,

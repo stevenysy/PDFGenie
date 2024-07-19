@@ -27,7 +27,7 @@ let filePath;
 app.post("/upload", upload.single("file"), (req, res) => {
   console.log(req.file);
   filePath = req.file.path;
-  res.send(filePath + " upload successfully.");
+  res.send(filePath + " uploaded successfully.");
 });
 
 app.get("/chat", async (req, res) => {
