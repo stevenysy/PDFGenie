@@ -14,7 +14,11 @@ An AI-powered PDF helper
    ```shell
     npm install    
     ```
-4. Run the app
+4. Enter your OpenAI API Key
+    ```shell
+    export REACT_APP_OPEN_AI_API_KEY=your-api-key
+    ```
+5. Run the app
     ```shell
     npm run dev
     ```
