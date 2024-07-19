@@ -23,13 +23,7 @@ const ChatComponent = ({ isLoading, setIsLoading, handleResp }) => {
   const [speech, setSpeech] = useState();
 
   // Speech recognition
-  const {
-    transcript,
-    listening,
-    resetTranscript,
-    browserSupportsSpeechRecognition,
-    isMicrophoneAvailable,
-  } = useSpeechRecognition();
+  const { transcript, listening, resetTranscript } = useSpeechRecognition();
 
   useEffect(() => {
     const speech = new Speech();

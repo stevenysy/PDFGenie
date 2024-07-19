@@ -27,11 +27,6 @@ const chat = async (filePath = "./uploads/kessoku-band.pdf", query) => {
     embeddings,
   );
 
-  // 4. Retrieval
-  // const relevantDocs = await vectorStore.similaritySearch(
-  //   "What is Kessoku Band?",
-  // );
-
   // 5. QA with customizing the prompt
   const model = new ChatOpenAI({
     modelName: "gpt-3.5-turbo",
@@ -51,6 +46,7 @@ Helpful Answer:`;
     prompt: PromptTemplate.fromTemplate(template),
     // returnSourceDocuments: true
   });
+
   return await chain.call({
     query,
   });
