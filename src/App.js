@@ -16,7 +16,6 @@ const chatComponentStyle = {
 const pdfUploaderStyle = {
   margin: "auto",
   paddingTop: "80px",
-  paddingLeft: "20%",
 };
 
 const conversationStyle = {
@@ -39,9 +38,15 @@ function App() {
     <>
       <Layout style={{ height: "100vh", backgroundColor: "white" }}>
         <Header style={{ display: "flex", alignItems: "center" }}>
-          <Title style={{ color: "white" }}>Next AI</Title>
+          <Title style={{ color: "white" }}>PDFGenie</Title>
         </Header>
-        <Content style={{ width: "80%" }}>
+        <Content
+          style={{
+            width: "80%",
+            position: "relative",
+            left: "10%",
+          }}
+        >
           <div style={pdfUploaderStyle}>
             <PdfUploader />
           </div>
