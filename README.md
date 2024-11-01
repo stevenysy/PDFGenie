@@ -1,4 +1,4 @@
-# Next AI
+# PDFGenie
 An AI-powered PDF helper
 
 ## Getting Started
