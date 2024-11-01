@@ -151,7 +151,7 @@ const ChatComponent = ({ isLoading, setIsLoading, handleResp }) => {
         onClick={handleChatModeClick}
         style={{ marginLeft: "5px" }}
       >
-        Chat mode: {isChatModeOn ? "On" : "Off"}
+        Talk mode: {isChatModeOn ? "On" : "Off"}
       </Button>
       {isChatModeOn && (
         <Button
