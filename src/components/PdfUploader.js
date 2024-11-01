@@ -63,10 +63,7 @@ const PdfUploader = () => {
       <p className="ant-upload-text">
         Click or drag file to this area to upload
       </p>
-      <p className="ant-upload-hint">
-        Supports single or bulk upload. Do not upload files with sensitive info
-        like company data!
-      </p>
+      <p className="ant-upload-hint">Supports single or bulk upload.</p>
     </Dragger>
   );
 };
